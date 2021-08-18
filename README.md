@@ -1,8 +1,8 @@
 # Data science portfolio by Eva Lee
 
 ## Micro Project
-### placeholder name
-description
+### Analysis on Japanese Web Novel Title Length
+
 
 
 ## Classification
