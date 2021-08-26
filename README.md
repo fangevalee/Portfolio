@@ -1,10 +1,18 @@
 # Data science portfolio by Eva Lee
+This portfolio contains my Data Science and Data Analysis projects for academic , self-learning and hobby purposes.
 
-### [Analysis on Japanese Web Novel Title Length](https://github.com/fangevalee/Portfolio/blob/eee0685ac7af0b148bc5c8c7d4077e319e05d2e1/WebNovel/WebNovelAnalysis.md)
-In this project, I used OLS regression to study the effect of having a longer title on the amount of views, bookmarks, and written reviews received by the web novel. The data I used was collected from Syosetsu.com, the largest web novel platform in Japan, using the selenium package in Python, and I created some data visualizations in Tableau in order to better understand the data.<br>
-The regression results show that longer titles have a statistically significant positive effect on the number of bookmarks and written reviews a web novel receives. Title length might also have a positive effect on the number of weekly views and a negative effect on the rating of the novel.
+### [Analysis on Japanese Web Novel Title Length and its Impact on Popularity](https://github.com/fangevalee/Portfolio/blob/4259afb3b043bca557261084b7c38acddaa9c704/WebNovel/WebNovelAnalysis.md)
+* Scraped data from a Japanese web novel platform using the Selenium package in Python
+* Created data visualizations with Tableau
+* Used regression analysis to study the effect of having a longer title on the amount of views, bookmarks, written reviews, and average rating of a web novel<br>
+
+The data visualizations show that the average title length of Japanese web novels has been increasing over time and fantasy novels have longer titles than other genres.
+The regression results show that longer titles have a positive effect on the number of bookmarks, the number of unique viewers in one week, and the number of written reviews a web novel receives. Longer titles also have a negative effect on the average rating of the novel.<br>
 
 
-### [Bank Marketing Data](https://github.com/fangevalee/Portfolio/blob/main/notebook/Bank%20Marketing.ipynb) 
-In this project, I used logistic regression, k-nearest neighbors, decision tree, neural network, and support vector machine to predict if a client will make a subscription and compared the results. The highest accuracy I got was 0.88742674.
+### [Classification: Bank Marketing Data](https://github.com/fangevalee/Portfolio/blob/main/notebook/Bank%20Marketing.ipynb) 
+Used logistic regression, k-nearest neighbors, decision tree, neural network, and support vector machine to predict if a client will make a subscription and compared the accuracy of the predictions. The highest accuracy was 0.88742674.<br>
+
+*Tools Used: pandas, sklearn, matplotlib, seaborn*
+
 
