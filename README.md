@@ -1,6 +1,6 @@
 # Data science portfolio by Eva Lee
 
-### [Analysis on Japanese Web Novel Title Length](https://github.com/fangevalee/Portfolio/blob/bf85afcb34a53af03bc8356f979c3178e620a2ba/WebNovel/WebNovelAnalysis.md)
+### [Analysis on Japanese Web Novel Title Length](https://github.com/fangevalee/Portfolio/blob/eee0685ac7af0b148bc5c8c7d4077e319e05d2e1/WebNovel/WebNovelAnalysis.md)
 In this project, I used OLS regression to study the effect of having a longer title on the amount of views, bookmarks, and written reviews received by the web novel. The data I used was collected from Syosetsu.com, the largest web novel platform in Japan, using the selenium package in Python, and I created some data visualizations in Tableau in order to better understand the data.<br>
 The regression results show that longer titles have a statistically significant positive effect on the number of bookmarks and written reviews a web novel receives. Title length might also have a positive effect on the number of weekly views and a negative effect on the rating of the novel.
 
