@@ -21,8 +21,10 @@ The goal of this project is to answer the folling questions using data:<br>
 * Is there a significant correlation between title length and number of written reviews for the web novel?
 
 ## About the Dataset
-The dataset was scraped from Syosetsu.com using the Selenium package in Python. [Click here to view the codes for web scraping and data cleaning.](https://github.com/fangevalee/Portfolio/blob/73f9b22f294df776250fe9fa4c6f3c52fe65fb6d/WebNovel/Web%20Novel%20Web%20Scraping%20with%20Selenium.ipynb)
+The dataset was scraped from Syosetsu.com using the Selenium package in Python.<br>
+Syosetu.com is the largest web novel platform in Japan. It has over 890,000 written works and 2,000,000 users, and many of its famous works have had manga and anime adaptations. The dataset contains 51940 popular web novels that were published on Syosetu.com between 2017 and July 2021. <br>
 
+[Click here to view the Jupyter notebook for web scraping and data cleaning.](https://github.com/fangevalee/Portfolio/blob/73f9b22f294df776250fe9fa4c6f3c52fe65fb6d/WebNovel/Web%20Novel%20Web%20Scraping%20with%20Selenium.ipynb)
 
 ## [Data Visualization](https://public.tableau.com/views/JapaneseWebNovel2/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link)
 
