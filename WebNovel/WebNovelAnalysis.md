@@ -26,8 +26,10 @@ Syosetu.com is the largest web novel platform in Japan. It has over 890,000 writ
 
 [Click here to view the Jupyter notebook for web scraping and data cleaning.](https://github.com/fangevalee/Portfolio/blob/73f9b22f294df776250fe9fa4c6f3c52fe65fb6d/WebNovel/Web%20Novel%20Web%20Scraping%20with%20Selenium.ipynb)
 
-## [Data Visualization](https://public.tableau.com/views/JapaneseWebNovel2/Dashboard2?:language=en-US&:display_count=n&:origin=viz_share_link)
+## Data Visualization
+<div class='tableauPlaceholder' id='viz1630298726443' style='position: relative'><noscript><a href='#'><img alt='page2 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel2&#47;page22&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='JapaneseWebNovel2&#47;page22' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel2&#47;page22&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
 
+[Click here to view the full interactive Tableau dashboard.](https://public.tableau.com/views/AnalysisonJapaneseWebNovelTitles/page1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
 ## [Regression analysis](https://github.com/fangevalee/Portfolio/blob/94a72217387f805eff18f29bd42f0c5fb78a381e/WebNovel/Web%20Novel%20Regression%20Analysis.ipynb)
 
