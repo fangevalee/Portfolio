@@ -1,7 +1,7 @@
 # Analysis on Japanese Web Novel Title Length
 
 ## Abstract
-Web Novels in Japan are known to have long titles, and some people believe that longer titles lead to more clicks. I collected data from Syosetsu.com, the largest web novel platform in Japan, and used OLS regression to analyze title length’s effects on number of weekly viewers, average rating, number of bookmarks, and number of written reviews. The regression results show that longer titles have a positive effect on the number of bookmarks and written reviews a web novel receives. Title length might also have a positive effect on the number of weekly views and a negative effect on the rating of the novels.
+Web Novels in Japan are known to have long titles. While some people believe that longer titles lead to more clicks, there are also readers who claim that web novels with shorter titles are better than the ones with very long titles.I collected data from Syosetsu.com, the largest web novel platform in Japan, and used OLS regression to analyze title length’s effects on the number of weekly viewers, average rating, number of bookmarks, and number of written reviews. The regression results show that longer titles positively affect the number of bookmarks and written reviews a web novel receives. Title length might also have a positive effect on the number of weekly views and a negative impact on the rating of the web novels.
 
 ## Introduction
 #### What is a Web Novel?
@@ -28,10 +28,27 @@ Syosetu.com is the largest web novel platform in Japan. It has over 890,000 writ
 
 ## Data Visualization
 <div class='tableauPlaceholder' id='viz1630298726443' style='position: relative'><noscript><a href='#'><img alt='page2 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel2&#47;page22&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='JapaneseWebNovel2&#47;page22' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel2&#47;page22&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
+<br>
+
+* The average title length of web novels on Syosetu.com has been increasing over time
+* Fantasy novels have longer titles than other genres on average
+<br>
+<br>
+
+**Comparison Between Two Web Novel Platforms**
+Platform |Syosetu.com| Kakuyomu
+------------ |------------ | -------------
+Search result format | Required users to click a 'read more' buttom to view the story abstract and tags | Always show the story abstracts
+
+<div class='tableauPlaceholder' id='viz1630366441414' style='position: relative'><noscript><a href='#'><img alt='page4 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel1&#47;page42&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='JapaneseWebNovel1&#47;page42' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel1&#47;page42&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>    
+
+* The average title length of web novels is longer than the average of all published light novels
+* For each genre, Syosetsu.com's average title length is higher than Kakuyomu's.
 
 [Click here to view the full interactive Tableau dashboard.](https://public.tableau.com/views/AnalysisonJapaneseWebNovelTitles/page1?:language=en-US&:display_count=n&:origin=viz_share_link)
 
-## [Regression analysis](https://github.com/fangevalee/Portfolio/blob/94a72217387f805eff18f29bd42f0c5fb78a381e/WebNovel/Web%20Novel%20Regression%20Analysis.ipynb)
+## Regression analysis
 
 
+[Click here to view the Jupyter notebook for regression analysis](https://github.com/fangevalee/Portfolio/blob/94a72217387f805eff18f29bd42f0c5fb78a381e/WebNovel/Web%20Novel%20Regression%20Analysis.ipynb)
 ## Conclusion
