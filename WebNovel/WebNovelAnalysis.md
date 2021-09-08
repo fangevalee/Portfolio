@@ -34,14 +34,13 @@ Syosetu.com is the largest web novel platform in Japan. It has over 890,000 writ
 * The average title length of web novels on Syosetu.com has been increasing over time
 * Fantasy novels have longer titles than other genres on average
 <br>
-<br>
 
 #### Comparison Between Two Web Novel Platforms
 
 <div class='tableauPlaceholder' id='viz1630366441414' style='position: relative'><noscript><a href='#'><img alt='page4 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel1&#47;page42&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='JapaneseWebNovel1&#47;page42' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel1&#47;page42&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>    
-
-In this part, I compared top web novels from Syosetu.com with web novels from another platform called Kakuyomu and light novels that are published by major publishers in Japan: <br>
 <br>
+In this part, I compared top web novels from Syosetu.com with web novels from another platform called Kakuyomu and light novels that are published by major publishers in Japan: <br>
+
 **Syosetu.com**: The largest web novel platform in Japan that started in 2004. Its mobile user interface does not show the story abstract in the search result by default. The users are required to click a ‘read more’ button in order to see the story abstract and tags. <br>
 **Kakuyomu**: A newer web novel platform in Japan that started in 2016. Unlike Syosetsu.com, Kakuyomu always shows the abstract and tags of the web novels in their search result.<br>
 **Light novels**: Young adult fiction with anime-like graphics. The majority of the web novels that have been published and printed into printed novels are considered to be light novels.<br>
