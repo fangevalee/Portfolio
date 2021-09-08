@@ -11,10 +11,10 @@ One interesting fact about web novels in Japan is that they are known for their 
 
 ## Objectives
 The goal of this project is to answer the folling questions using data:<br>
-* Is it true that web novels are getting longer and longer?
-* Is it true that web novel titles are longer than  the novels that are published by major publishers?
+* Is it true that web novel titles are getting longer and longer?
+* Is it true that web novel titles are longer than the non-web novels that are published by major publishers?
 * Which genre has the longest title length on average?
-* Are web novel titles on Syosetu.com, which does not shows story abstract by default, longer than platform that shows the story abstract?
+* Are web novel titles on Syosetu.com, which does not shows story abstract by default, longer than another platform that shows the story abstract?
 * Is there a significant correlation between title length and number of views?
 * Is there a significant correlation between title length and number of readers (number of users who have bookmarked the work)?
 * Is there a significant correlation between title length and the average rating?
@@ -61,18 +61,22 @@ I used Robust linear regression models to estimate title length’s effect on th
 3. Multiple linear regression of the outcome variable on title length, **title length squared**, genre, published year, number of parts, whether or not the work is completed, and whether or not the work is an ongoing novel with no update for over 6 months.
 4. Multiple linear regression of the outcome variable on title length, **title length squared**, genre, published year, number of parts, whether or not the work is completed, whether or not the work is an ongoing novel with no update for over 6 months, and **interaction terms between the genre and title length**.
 
-#### Weekly Viewers
-Title length has a **statistically significant positive effect** on the number of unique viewers who have viewed the web novel in the past week. <br>
-In the third model, the coefficient on title length is 6.328 while the coefficient on title length squared is -0.031. A positive coefficient on title length and a negative coefficient on the squared term means that the additional effect of increasing your title **diminishes** as the title gets longer and longer.<br>
-The forth model with interaction terms shows how the effect of title length on the number of weekly viewers is different for each genre. The effect is the **largest on Fantasy novels**; increasing the title of a Fantasy novel by one Japanese character is expected to increase the estimated weekly viewers by 8.3. On the other hand, the effect on Other novels is not statistically significant, meaning that the effect is very small and we cannot reject the possibility that title length has no effect on the weekly viewers of Other novels.<br>
-<br>
-*The coefficient on title length in the forth model represents the effect of increasing title length by one character on the weekly viewers of Other novels.*<br>
-*The coefficient on title length x Fantasy novels in the forth model represents the difference between the effect on Fantasy novels and the effect on Other novels.The effect of title length on the weekly viewers of Fantasy novels would be the sum of the coefficient on title length and the coefficient on title length x Fantasy.*<br>
+#### Estimated effect of increasing the novel title by one character from the 3rd model:<br>
 
-#### Average Score
+Outcome Variable | Effects on the Outcome Variable
+------------ | -------------
+Weekly Viewers | 6.328 - 0.031 × Title Length
+Average Score | - 0.003
+Number of Bookmarks | 9.725 - 0.036 × Title Length
 
+#### Estimated effect of increasing the novel title by one character for each genre from the 4th model:<br>
 
-#### Number of Bookmarks
+| Genre | Weekly Viewers | Average Score | Number of Bookmarks |
+| ------------- | ------------- | ------------- | ------------- |
+| Fantasy  | 8.318 - 0.044 × Title Length  | - 0.004 | 18.669 - 0.115 × Title Length |
+| Literature  | 5.443 - 0.044 × Title Length  | - 0.005 | 15.827 - 0.115 × Title Length |
+| Romance  | 6.637 - 0.044 × Title Length  | - 0.002 | 18.445 - 0.115 × Title Length |
+| Sci-fi  | 5.990 - 0.044 × Title Length  | - 0.002 | 23.437 - 0.115 × Title Length |
+| Others  | 1.250 - 0.044 × Title Length  | - 0.005 | 5.959 - 0.115 × Title Length |
 
 [Click here to view the Jupyter notebook for regression analysis](https://github.com/fangevalee/Portfolio/blob/6b05fbc6abf824dd1ded2be0ffdd20fae3d3c0d2/WebNovel/Web%20Novel%20Regression%20Analysis.ipynb)
-## Conclusion
