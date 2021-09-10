@@ -30,11 +30,10 @@ Syosetu.com is the largest web novel platform in Japan. It has over 890,000 writ
 #### Web Novels on Syosetu.com
 <div class='tableauPlaceholder' id='viz1630298726443' style='position: relative'><noscript><a href='#'><img alt='page2 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel2&#47;page22&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='JapaneseWebNovel2&#47;page22' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel2&#47;page22&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
 <br>
-
+**Key Findings:**
 * The average title length of web novels on Syosetu.com has been increasing over time
 * Fantasy novels have longer titles than other genres on average
 <br>
-
 #### Comparison Between Two Web Novel Platforms
 
 <div class='tableauPlaceholder' id='viz1630366441414' style='position: relative'><noscript><a href='#'><img alt='page4 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel1&#47;page42&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='JapaneseWebNovel1&#47;page42' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel1&#47;page42&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>    
@@ -60,22 +59,51 @@ I used Robust linear regression models to estimate title length’s effect on th
 3. Multiple linear regression of the outcome variable on title length, **title length squared**, genre, published year, number of parts, whether or not the work is completed, and whether or not the work is an ongoing novel with no update for over 6 months.
 4. Multiple linear regression of the outcome variable on title length, **title length squared**, genre, published year, number of parts, whether or not the work is completed, whether or not the work is an ongoing novel with no update for over 6 months, and **interaction terms between the genre and title length**.
 
-#### Estimated effect of increasing the novel title by one character from the 3rd model:<br>
+### Regression result Of Model #3: 
 
-Outcome Variable | Effects on the Outcome Variable
+| Independent Variables | Weekly Viewers | Average Score | Number of Bookmarks |
+| ------------- | ------------- | ------------- | ------------- |
+| Intercept | 151.175 | 8.46229*** | -330.036*** |
+| Title_Length | 6.328*** | -0.00346*** | 9.725*** |
+| Title_length_squared | -0.031*** | 0.00004*** | -0.036*** |
+
+#### Interpretation:<br>
+
+Outcome Variable | Estimated effect on the outcome variable when the title length increase by one
 ------------ | -------------
 Weekly Viewers | 6.328 - 0.031 × Title Length
-Average Score | - 0.003
+Average Score | -0.00346 + 0.00004 × Title Length
 Number of Bookmarks | 9.725 - 0.036 × Title Length
 
-#### Estimated effect of increasing the novel title by one character for each genre from the 4th model:<br>
+### Regression result Of Model #4: 
+
+| Independent Variables | Weekly Viewers | Average Score | Number of Bookmarks |
+| ------------- | ------------- | ------------- | ------------- |
+| Intercept | 252.979 | 8.49075*** | -262.895*** |
+| Title_Length | -4.624 | -0.00688*** | 2.544*** |
+| Title_length_squared | 0.089 | 0.00008** | -0.027 |
+| Fantasy × Title Length | 12.148** | 0.00252 | 15.009*** |
+| Literature × Title Length | 13.308** | 0.00397 | 14.419*** |
+| Romance × Title Length | 11.544** | 0.00557** | 20.979*** |
+| Sci-fi × Title Length | 13.186** | 0.00542 | 31.491*** |
+| Fantasy × Title Length Squared | -0.124 | -0.00003 | -0.072*** |
+| Literature × Title Length Squared | -0.180* | -0.00007 | -0.106*** |
+| Romance × Title Length Squared | -0.137 | -0.00006 | -0.167*** |
+| Sci-fi × Title Length Squared | -0.170 | -0.00005 | -0.265*** |
+
+
+#### Interpretation:<br>
+Estimated effect on the outcome variable when the title length increase by one for each genre:
 
 | Genre | Weekly Viewers | Average Score | Number of Bookmarks |
 | ------------- | ------------- | ------------- | ------------- |
-| Fantasy  | 8.318 - 0.044 × Title Length  | - 0.004 | 18.669 - 0.115 × Title Length |
-| Literature  | 5.443 - 0.044 × Title Length  | - 0.005 | 15.827 - 0.115 × Title Length |
-| Romance  | 6.637 - 0.044 × Title Length  | - 0.002 | 18.445 - 0.115 × Title Length |
-| Sci-fi  | 5.990 - 0.044 × Title Length  | - 0.002 | 23.437 - 0.115 × Title Length |
-| Others  | 1.250 - 0.044 × Title Length  | - 0.005 | 5.959 - 0.115 × Title Length |
+| Fantasy  | 7.524 - 0.035 × Title Length  | -0.00436 + 0.00005 × Title Length | 17.553 - 0.099 × Title Length |
+| Literature  | 8.684 - 0.091 × Title Length  | -0.00291 + 0.00001 × Title Length | 16.963 - 0.133 × Title Length |
+| Romance  | 6.920 - 0.048 × Title Length  | -0.00131 - 0.00002× Title Length | 23.523 - 0.194 × Title Length |
+| Sci-fi  | 8.562 - 0.081 × Title Length  | -0.00146 + 0.00003× Title Length | 34.035 - 0.292 × Title Length |
+| Others  | -4.624 + 0.089 × Title Length  | -0.00688 + 0.00008 × Title Length | 2.544 - 0.027 × Title Length |
 
-[Click here to view the Jupyter notebook for regression analysis](https://github.com/fangevalee/Portfolio/blob/6b05fbc6abf824dd1ded2be0ffdd20fae3d3c0d2/WebNovel/Web%20Novel%20Regression%20Analysis.ipynb)
+### Conclusion
+According to the regression results, the title length of a web novel positively affects the number of weekly viewers and bookmarks and negatively affects the average rating of the web novel, and these effects would diminish as the title length increases. (i.g. The effect of increasing title length from 1 character long to 2 characters is larger than the effect of increasing title length from 99 to 100.)
+
+[Click here to view the full regression results in Jupyter notebook](https://github.com/fangevalee/Portfolio/blob/18e80710dc9a78dcf875dc9d4cfddb02ed6a8c00/WebNovel/Web%20Novel%20Regression%20Analysis.ipynb)
