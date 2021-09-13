@@ -27,13 +27,17 @@ Syosetu.com is the largest web novel platform in Japan. It has over 890,000 writ
 [Click here to view the Jupyter notebook for web scraping and data cleaning.](https://github.com/fangevalee/Portfolio/blob/73f9b22f294df776250fe9fa4c6f3c52fe65fb6d/WebNovel/Web%20Novel%20Web%20Scraping%20with%20Selenium.ipynb)
 
 ## Data Visualization
+
 #### Web Novels on Syosetu.com
+
 <div class='tableauPlaceholder' id='viz1630298726443' style='position: relative'><noscript><a href='#'><img alt='page2 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel2&#47;page22&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='JapaneseWebNovel2&#47;page22' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel2&#47;page22&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>
 <br>
+
 **Key Findings:**
 * The average title length of web novels on Syosetu.com has been increasing over time
 * Fantasy novels have longer titles than other genres on average
 <br>
+
 #### Comparison Between Two Web Novel Platforms
 
 <div class='tableauPlaceholder' id='viz1630366441414' style='position: relative'><noscript><a href='#'><img alt='page4 (2) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel1&#47;page42&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='JapaneseWebNovel1&#47;page42' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ja&#47;JapaneseWebNovel1&#47;page42&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>    
@@ -42,7 +46,7 @@ In this part, I compared top web novels from Syosetu.com with web novels from an
 
 **Syosetu.com**: The largest web novel platform in Japan that started in 2004. Its mobile user interface does not show the story abstract in the search result by default. The users are required to click a ‘read more’ button in order to see the story abstract and tags. <br>
 **Kakuyomu**: A newer web novel platform in Japan that started in 2016. Unlike Syosetsu.com, Kakuyomu always shows the abstract and tags of the web novels in their search result.<br>
-**Light novels**: Young adult fiction with anime-like graphics. The majority of the web novels that have been published and printed into printed novels are considered to be light novels.<br>
+**Light novels**: Young adult fiction with anime-like graphics that are traditionally published by major publishers. The majority of the web novels that have been published and printed into printed novels are considered to be light novels.<br>
 
 **Key Findings:**
 * The average title lengths have been growing over time on all platforms.
@@ -99,11 +103,11 @@ Estimated effect on the outcome variable when the title length increase by one f
 | ------------- | ------------- | ------------- | ------------- |
 | Fantasy  | 7.524 - 0.035 × Title Length  | -0.00436 + 0.00005 × Title Length | 17.553 - 0.099 × Title Length |
 | Literature  | 8.684 - 0.091 × Title Length  | -0.00291 + 0.00001 × Title Length | 16.963 - 0.133 × Title Length |
-| Romance  | 6.920 - 0.048 × Title Length  | -0.00131 - 0.00002× Title Length | 23.523 - 0.194 × Title Length |
-| Sci-fi  | 8.562 - 0.081 × Title Length  | -0.00146 + 0.00003× Title Length | 34.035 - 0.292 × Title Length |
+| Romance  | 6.920 - 0.048 × Title Length  | -0.00131 - 0.00002 × Title Length | 23.523 - 0.194 × Title Length |
+| Sci-fi  | 8.562 - 0.081 × Title Length  | -0.00146 + 0.00003 × Title Length | 34.035 - 0.292 × Title Length |
 | Others  | -4.624 + 0.089 × Title Length  | -0.00688 + 0.00008 × Title Length | 2.544 - 0.027 × Title Length |
 
 ### Conclusion
-According to the regression results, the title length of a web novel positively affects the number of weekly viewers and bookmarks and negatively affects the average rating of the web novel, and these effects would diminish as the title length increases. (i.g. The effect of increasing title length from 1 character long to 2 characters is larger than the effect of increasing title length from 99 to 100.)
+According to the regression results, the title length of a web novel has a positive effect on weekly views, a positive effect on the number of bookmarks, and a negative effect on the average rating. These effects diminish as the title length increases. (i.g. The effect of increasing title length from 1 character long to 2 characters is larger than the effect of increasing title length from 99 to 100.)
 
 [Click here to view the full regression results in Jupyter notebook](https://github.com/fangevalee/Portfolio/blob/18e80710dc9a78dcf875dc9d4cfddb02ed6a8c00/WebNovel/Web%20Novel%20Regression%20Analysis.ipynb)
