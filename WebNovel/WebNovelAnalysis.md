@@ -57,11 +57,16 @@ In this part, I compared top web novels from Syosetu.com with web novels from an
 
 ## Regression analysis
 
-I used Robust linear regression models to estimate title length’s effect on the weekly viewers, average score, and the number of bookmarks. Each regression table contains the result of 4 regression models:<br>
+I used Robust linear regression models to estimate title length’s effect on the weekly viewers, average score, and the number of bookmarks. Each regression table in the jupyter notebook contains the result of 4 regression models:<br>
 1. Simple linear regression of the outcome variable (which is weekly viewers, average score, or number of bookmarks) on title length.
 2. Multiple linear regression of the outcome variable on title length, genre, published year, number of parts, whether or not the work is completed, and whether or not the work is an ongoing novel with no update for over 6 months.
 3. Multiple linear regression of the outcome variable on title length, **title length squared**, genre, published year, number of parts, whether or not the work is completed, and whether or not the work is an ongoing novel with no update for over 6 months.
 4. Multiple linear regression of the outcome variable on title length, **title length squared**, genre, published year, number of parts, whether or not the work is completed, whether or not the work is an ongoing novel with no update for over 6 months, and **interaction terms between the genre and title length**.
+
+### How to understand the regression results?
+* **Squared term**: A squared term turns a linear regression into a curve, which shows how the effect of a variable changes based on its value. Example: the effect of increasing title length by one character is 6.328 - 0.031×Title Length. It means that when you increase your novel title from 1 character long to 2 characters long, the effect on weekly viewers would be 6.328 - 0.031×1 = 6.297, and if you increase your novel title from 20 characters to 21 characters long, the effect on weekly viewers would be 6.328 - 0.031×20 = 5.708,  which is smaller than the previous one.
+* **Interaction term**: An interaction term shows how the effect of a variable can be different depending on another variable. (e.g. How the effect of getting a degree can be different for different races or genders.) In this case, the interaction terms between the genre and title length tells us how the effect of title length is different for different genres.
+* The * signs next to the number indicate whether or not the coefficient is statistically significant. If the number does not have any * next to it, it means that we cannot deny the possibility that this coefficient is actually equal to 0 (aka has no effect on the outcome variable.)
 
 ### Regression result Of Model #3: 
 
@@ -71,7 +76,7 @@ I used Robust linear regression models to estimate title length’s effect on th
 | Title_Length | 6.328*** | -0.00346*** | 9.725*** |
 | Title_length_squared | -0.031*** | 0.00004*** | -0.036*** |
 
-#### Interpretation:<br>
+Interpretation:<br>
 
 Outcome Variable | Estimated effect on the outcome variable when the title length increase by one
 ------------ | -------------
@@ -95,8 +100,7 @@ Number of Bookmarks | 9.725 - 0.036 × Title Length
 | Romance × Title Length Squared | -0.137 | -0.00006 | -0.167*** |
 | Sci-fi × Title Length Squared | -0.170 | -0.00005 | -0.265*** |
 
-
-#### Interpretation:<br>
+Interpretation:<br>
 Estimated effect on the outcome variable when the title length increase by one for each genre:
 
 | Genre | Weekly Viewers | Average Score | Number of Bookmarks |
