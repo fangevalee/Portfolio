@@ -1,7 +1,7 @@
 # Data science portfolio by Eva Lee
 This portfolio contains my Data Science and Data Analysis projects for academic , self-learning and hobby purposes.
 
-### [Analysis on Japanese Web Novel Title Length and its Impact on Popularity](https://github.com/fangevalee/Portfolio/blob/7e53387362263ea9e7b77f7ef1ff8be81b7a5395/WebNovel/WebNovelAnalysis.md)
+### [Analysis on Japanese Web Novel Title Length and its Impact on Popularity](https://github.com/fangevalee/Portfolio/blob/c1449ea549951a177996a21052a160520c02546d/WebNovel/WebNovelAnalysis.md)
 * Scraped data from a Japanese web novel platform using the Selenium package in Python
 * Created data visualizations with Tableau
 * Used regression analysis to study the effect of having a longer title on the amount of views, bookmarks, written reviews, and average rating of a web novel<br>
