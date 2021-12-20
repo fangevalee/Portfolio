@@ -10,6 +10,8 @@ The dataset was collected from Syosetsu.com, Japan's largest web novel platform,
 
 [Click here to view the Jupyter notebook for web scraping and data cleaning.](https://github.com/fangevalee/Portfolio/blob/2dd69babdb34fc252e3a64782892da3cd874637d/WebNovel/Web%20scraping%20with%20Selenium.ipynb)
 
+[Click here to view the Tableau dashboard of the **older version** of the dataset.(I will make one with this new dataset soon.)](https://public.tableau.com/app/profile/eva.lee3016/viz/AnalysisonJapaneseWebNovelTitles/page1)
+
 ## [Regression Analysis on Title Length's Impact](https://github.com/fangevalee/Portfolio/blob/2dd69babdb34fc252e3a64782892da3cd874637d/WebNovel/Analysis%20on%20Web%20Novel%20Data.ipynb)
 
 ### Robust Linear Regression with Interaction terms
