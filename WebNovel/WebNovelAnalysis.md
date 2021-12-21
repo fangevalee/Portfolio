@@ -12,7 +12,7 @@ The dataset was collected from Syosetsu.com, Japan's largest web novel platform,
 
 [Click here to view the Tableau dashboard of the **older version** of the dataset.(I will make one with this new dataset soon.)](https://public.tableau.com/app/profile/eva.lee3016/viz/AnalysisonJapaneseWebNovelTitles/page1)
 
-## [Regression Analysis on Title Length's Impact](https://github.com/fangevalee/Portfolio/blob/2dd69babdb34fc252e3a64782892da3cd874637d/WebNovel/Analysis%20on%20Web%20Novel%20Data.ipynb)
+## [Regression Analysis on Title Length's Impact](https://github.com/fangevalee/Portfolio/blob/24b47c77d160fa8c869c0edf64603aab218c2fa9/WebNovel/Analysis%20on%20Web%20Novel%20Data.ipynb)
 
 ### Robust Linear Regression with Interaction terms
 #### Estimated Effect of Title Length by Genres
@@ -39,4 +39,4 @@ Title length is negatively correlated with the average rating. <br>The estimated
 ## K-NN and Logistic Regression
 Most Web novels are published in a serialized format, and it is common for writers to stop writing in the middle of the story. The majority of ongoing novels on Syosetsu.com hasn't had any new update for over a year! In this part, I used K Nearest Neighbor and Logistic Regression to classify the novels with no update for over a year. The best accuracy score I got was 0.91454.
 
-[Click here to view the Jupyter notebook for regression analysis and machine learning.](https://github.com/fangevalee/Portfolio/blob/2dd69babdb34fc252e3a64782892da3cd874637d/WebNovel/Analysis%20on%20Web%20Novel%20Data.ipynb)
+[Click here to view the Jupyter notebook for regression analysis and machine learning.](https://github.com/fangevalee/Portfolio/blob/24b47c77d160fa8c869c0edf64603aab218c2fa9/WebNovel/Analysis%20on%20Web%20Novel%20Data.ipynb)
